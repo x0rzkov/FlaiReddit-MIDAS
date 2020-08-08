@@ -34,11 +34,11 @@ def sampler(df, thresh=22700):
 if __name__ == "__main__":
 
     # Target Paths
-    VEC_PATH = "tfidf.pickle"
-    MODEL_PATH = "model.pickle"
+    VEC_PATH = "models/tfidf.pickle"
+    MODEL_PATH = "models/model.pickle"
 
     # Load Data
-    DATA_PATH = "data.csv"
+    DATA_PATH = "dataset/data.csv"
     df = pd.read_csv(open(DATA_PATH), encoding="utf-8").dropna()
 
     # Clean
